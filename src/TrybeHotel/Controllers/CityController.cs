@@ -25,7 +25,7 @@ namespace TrybeHotel.Controllers
         [HttpPost]
         public IActionResult PostCity([FromBody] City city){
             CityDto cityDto = _repository.AddCity(city);
-            return Created("city/", cityDto);
+            return Created($"/city/{cityDto.CityId}", cityDto);
         }
     }
 }
