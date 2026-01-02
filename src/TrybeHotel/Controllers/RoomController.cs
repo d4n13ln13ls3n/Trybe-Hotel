@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TrybeHotel.Dto;
 using TrybeHotel.Models;
 using TrybeHotel.Repository;
 
@@ -23,7 +24,8 @@ namespace TrybeHotel.Controllers
         // 7. Desenvolva o endpoint POST /room
         [HttpPost]
         public IActionResult PostRoom([FromBody] Room room){
-            throw new NotImplementedException();
+            RoomDto RoomDto = _repository.AddRoom(room);
+            return Created($"/room/{room.HotelId}", RoomDto);
         }
 
         // 8. Desenvolva o endpoint DELETE /room/:roomId
