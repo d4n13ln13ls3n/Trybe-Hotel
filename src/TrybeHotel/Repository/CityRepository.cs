@@ -14,7 +14,12 @@ namespace TrybeHotel.Repository
         // 2. Desenvolva o endpoint GET /city
         public IEnumerable<CityDto> GetCities()
         {
-            throw new NotImplementedException();
+            return from city in _context.Cities
+                   select new CityDto
+                    {
+                        CityId = city.CityId,
+                        Name = city.Name,
+                    };
         }
 
         // 3. Desenvolva o endpoint POST /city
