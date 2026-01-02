@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TrybeHotel.Dto;
 using TrybeHotel.Models;
 using TrybeHotel.Repository;
 
@@ -23,7 +24,8 @@ namespace TrybeHotel.Controllers
         // 3. Desenvolva o endpoint POST /city
         [HttpPost]
         public IActionResult PostCity([FromBody] City city){
-            throw new NotImplementedException();
+            CityDto cityDto = _repository.AddCity(city);
+            return Created("city/", cityDto);
         }
     }
 }

@@ -200,7 +200,7 @@ Você está iniciando o desenvolvimento de uma API que será utilizada em uma ap
 
 Para iniciar o desenvolvimento, você desenvolverá algumas rotas das entidades acerca das cidades, hotéis e quartos que servirão para, no futuro, realizar o booking de pessoas clientes.
 
-No intuito de auxiliar o desenvolvimento, o time de produto já disponibilizou o diagrama de entidade-relacionamento e o time de DevOps disponibilizou um container na qual você poderá utilizar um banco de dados.
+No intuito de auxiliar o desenvolvimento, o time de produto já disponibilizou o diagrama de entidade-relacionamento e o time de DevOps disponibilizou um container no qual você poderá utilizar um banco de dados.
 
 O sistema está dividido em diretórios específicos para auxiliar na organização e desenvolvimento do projeto.
 
